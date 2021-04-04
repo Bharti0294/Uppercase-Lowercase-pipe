@@ -1,0 +1,20 @@
+<br>
+<div class="container bg" style="padding-left: 250px; background-color: lightgray;"> 
+    <div class="row">
+    <div class="col-md-3"></div>
+<div class="col-md-6">
+    <div class="card" style="width:300px;height: 200px;">
+        <div class="card-body">
+    <h4><b>lowercase pipe </b></h4><hr>
+				
+  {{address.village | lowercase}}<br>
+  <p [textContent] ="address.district | lowercase" > </p>
+  
+  <input (input) = "setMsg($event.target.value)">
+  {{message | lowercase}}
+        </div>
+        </div>
+</div>
+ <div class="col-md-3"></div>
+</div> 
+</div>

@@ -1,0 +1,22 @@
+<br>
+<div class="container bg" > 
+    <div class="row">
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+        <div class="card" style="width:300px;height: 200px;">
+            <div class="card-body">
+ <h4> <b>uppercase pipe </b></h4><hr>
+
+ {{address.village | uppercase}}<br>
+ <p [textContent] ="address.district | uppercase" > </p>
+ 
+ <input (input) = "setData($event.target.value)">
+  {{inputData | uppercase}}
+  </div>
+  </div>
+</div>
+
+<div class="col-md-3"></div>
+</div> 
+</div>
